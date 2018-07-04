@@ -37,11 +37,10 @@ class Song
     song = self.all.detect {|x| x.name == find_song}
    if song == nil
      song=self.create_by_name
-     song
    else
      song
    end
   end
 
-  
+
 end
