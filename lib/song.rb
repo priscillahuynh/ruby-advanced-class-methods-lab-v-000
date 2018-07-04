@@ -35,16 +35,17 @@ class Song
 
   def self.find_or_create_by_name(string_name)
     song = self.find_by_name(string_name)
-   if song == nil
+    if song == nil
      self.create_by_name(string_name)
-   else
+    else
      song
-   end
- end
+    end
+  end
  
    def self.alphabetical
      self.all.sort_by {|x|x.name}
    end
 
+   
 
 end
