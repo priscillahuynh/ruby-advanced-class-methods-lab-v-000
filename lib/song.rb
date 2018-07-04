@@ -40,6 +40,11 @@ class Song
    else
      song
    end
+
+   def self.alphabetical
+     @@all.sort
+   end
+    
   end
 
 
