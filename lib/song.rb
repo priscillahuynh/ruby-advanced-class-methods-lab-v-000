@@ -38,7 +38,9 @@ class Song
     self.create_by_name
     if @@all.include(string_name)
       return string_name
-    
+    else
+    end
+
   end
 
 end
