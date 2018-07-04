@@ -34,7 +34,7 @@ class Song
   end
 
   def self.find_or_create_by_name(string_name)
-    song = self.all.detect {|x| x.name == find_song}
+    song = self.find_by_name
    if song == nil
      song=self.new
      song.name = find_song
