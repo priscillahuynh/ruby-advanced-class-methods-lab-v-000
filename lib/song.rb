@@ -37,7 +37,8 @@ class Song
     song = self.all.detect {|x| x.name == find_song}
    if song == nil
      song=self.new
-     song.name=find_song
+     song.name = find_song
+     song.save 
      song
    else
      song
