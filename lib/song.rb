@@ -43,6 +43,5 @@ class Song
    else
      song
    end
-   song
   end
 end
