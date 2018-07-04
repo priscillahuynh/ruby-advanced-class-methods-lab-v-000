@@ -37,7 +37,7 @@ class Song
     song = self.find_by_name
    if song == nil
      song=self.new
-     song.name = find_song
+     song.name = string_name
      song.save
      song
    else
